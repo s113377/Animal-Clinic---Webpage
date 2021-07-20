@@ -1,0 +1,236 @@
+/* style.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nanum Gothic', '맑은 고딕' ,sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  line-height: 1.5rem;
+}
+
+.container {
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+  /* outline: 1px solid red; */
+}
+
+header {
+  width: 100%;
+  height: 90px;
+  /* background: #ccc; */
+  margin: 0 auto;
+  position: relative;
+  z-index: 999;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.25);
+}
+header h1 {
+  position: absolute;
+  left: 0px;
+  top: 20px;
+  font-size: 20px;
+}
+
+header nav {
+  position: absolute;
+  right: 0px;
+  top: 35px;
+}
+
+/* 1단계 메뉴 */
+header nav > ul > li {
+  float: left;
+  /* outline: 1px solid red; */
+  width: 8em;
+  text-align: center;
+  background: #fff;
+  font-weight: bold;
+}
+
+header nav > ul > li a {
+  color: #444;
+}
+header nav > ul > li > a:hover {
+  color: green;
+}
+
+/* 2단계 메뉴 */
+header nav .depth2 {
+  /* outline: 1px solid green; */
+  margin-top: 34px;
+  display: none;
+}
+
+header nav .depth2 > li > a {
+  display: block;
+  padding: 10px;
+}
+header nav .depth2 > li > a:hover {
+  background: #444;
+  color: #fff;
+}
+
+
+/* 메인 비주얼 */
+#mainVisual .container {
+  position: relative;
+  width: 1200px;
+  height: 469px;
+  /*  
+    배너 디자인
+    1.포토샵: 이미지 크기 1200 x 469
+    2.타이틀 텍스트 추가(텍스트 가독성 중요)
+    3.main_visual01_1200.jpg 로 저장(원본 유지)
+  */
+}
+
+.gallery{
+  width: 1200px;
+  height: 468px;
+  /* outline: 2px solid red; */
+  position: relative;
+}
+
+.gallery > img {
+  position: absolute;
+  width: 100%;
+}
+
+/* 인디케이터(tab) */
+.indicator {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  left: 0;
+  bottom: 0;
+}
+
+/* 기본 상태(비선택) */
+.indicator > li {
+  flex: 1;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  background: rgba(39,53,61, 0.3);
+  border-radius: 30px 30px 0 0;
+}  
+
+.indicator > li.active {
+  background: rgba(39,53,61, 1);
+}
+
+.indicator > li > a {
+  display: block;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+
+/* 메인 콘텐츠 영역 */
+#main {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+#main .container {
+  display: flex;
+}
+
+#main .col {
+  width: 380px;
+  /* outline: 1px solid red; */
+  /* float: left; */
+  margin-right: 30px;
+  background: #ededed;
+}
+
+#main .col:last-child {
+  margin: 0;
+}
+
+#main .col .text {
+  padding: 1em;
+}
+
+#main .col .text h4 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+#main .col .text p{
+  margin-bottom: 1em;
+  letter-spacing: -0.3px;
+}
+
+/* 버튼 */
+.btn {
+  display: block;
+  background: #999;
+  text-align: center;
+  color: #fff;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+/* 버튼 색상 스타일 추가 
+  1.#649550
+  2.#509591
+  3.#507595
+*/
+.btn-green {
+  background: #649550;
+}
+
+.btn-cyon {
+  background: #509591;
+}
+
+.btn-blue {
+  background: #507595;
+}
+
+footer {
+  font-size: 14px;
+  font-size: 0.87em;
+  background: #444;
+  color: #fff;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.footerMenu > li {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.footerMenu > li > a{
+  color: #fff;
+}
+
+footer .footerMenu span,  
+footer .address span {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 10px;
+  display: inline-block;
+  transform: translateY(-2px); 
+}
+
+footer .address {
+  margin-bottom: 5px;
+}

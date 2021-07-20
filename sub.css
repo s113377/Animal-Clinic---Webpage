@@ -1,0 +1,160 @@
+/* sub.css 
+  aside 250px
+  content 860px
+*/
+
+:root {
+  --main-color: #046eb8;
+  --sub-color1: #509591;
+  --sub-color2: #649550;
+}
+
+h2 {
+  font-size: 24px;
+}
+h3 {
+  font-size: 30px;
+}
+h4 {
+  font-size: 26px;
+}
+
+#main aside {
+  width: 250px;
+  /* outline: 1px solid red; */
+  margin-right: auto;
+}
+
+> #main article {
+  width: 900px;
+  /* outline: 1px solid red; */
+}
+
+
+/* 사이드바 영역 */
+#main aside h2 {
+  text-align: center;
+  background: var(--sub-color1);
+  padding-top: 40px;
+  padding-bottom: 40px;
+  color: #fff;
+}
+
+#main aside .subMenu > li {
+  background: #d7d7d7;
+}
+#main aside .subMenu > li > a {
+  transition: 0.4s;
+}
+#main aside .subMenu > li:hover > a {
+  background: #939a9e; 
+  color: #fff;
+}
+#main aside .subMenu > li.active > a {
+  background: #939a9e; 
+  color: #fff;  
+  border-bottom: 1px solid #fff;
+}
+
+#main aside .subMenu > li > a {
+  /* color: #fff; */
+  color: #898989;
+  /* background: #939a9e; */
+  background: #fff;
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  padding-left: 1em;
+  font-size: 18px;
+  font-weight: bold;
+  border-bottom: 1px solid rgba(0,0,0,0.25);
+}
+
+/* 본문 article */
+#main article .breadCrumb{
+  /* background: #ccc; */
+  text-align: right;
+  font-size: 12px;
+  margin-bottom: 2rem;
+}
+
+#sub1_1 article .textLayout {
+  display: flex;
+  padding: 40px 30px;
+  background: #f9f9f9;
+  /* background: #ccc; */
+  margin-top: 42px;
+}
+
+.textLayout img{
+  position: absolute;
+  width: 400px;
+  left: 75%;
+  top: 20%;
+}
+#sub1_1 article .textLayout .text {
+  margin-right: auto;
+}
+
+.accent {
+  color: var(--sub-color1);
+}
+.accent2 {
+  color: var(--sub-color2);
+}
+
+#sub1_1 article h4 {
+  margin-top: 25px;
+  margin-bottom: 20px;
+  line-height: 1.5em;
+}
+#sub1_1 article p {
+  margin-bottom: 30px;
+  line-height: 28px;
+}
+#sub1_1 article p:last-child {
+  margin-bottom: 0;
+}
+
+#sub1_1 article p strong {
+  font-size: large;
+  /* font-weight: normal; */
+  line-height: 1.5em;
+}
+
+#sub1_1 article .bottomTextLayout {
+  padding: 40px 30px;
+  margin-top: 30px;
+}
+
+#sub1_1 article .bottomTextLayout h4 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#sub1_1 article .bottomTextLayout ol {
+  list-style-position: inside;
+  margin-bottom: 1em;
+  line-height: 28px;
+}
+
+/***오시는 길(sub5_1)***/
+#sub5_1 article .location{
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+#sub5_1 article .location ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#sub5_1 article .location ul li{
+  width: 50%;
+  margin-bottom: 1em;
+}
+
+.fa{
+  color: var(--main-color)
+}
+
